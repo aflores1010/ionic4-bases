@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { isNavigationCancelingError } from '@angular/router/src/shared';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,7 @@ import { Title } from '@angular/platform-browser';
 export class HeaderComponent implements OnInit {
 
   @Input() title;
+  @Input() isAvatar;
 
   constructor() { }
 

@@ -17,6 +17,16 @@ export class HomePage implements OnInit {
       icon: 'appstore',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'beaker',
+      name: 'Avatar',
+      redirectTo: '/avatar'
+    },
+    {
+      icon: 'radio-button-on',
+      name: 'Buttons',
+      redirectTo: '/buttons'
     }
   ];
 
