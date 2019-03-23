@@ -1,0 +1,10 @@
+<app-header [title]="title"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let character of characters" (click)="onClick(character)">
+      <ion-label>{{character.name}}</ion-label>
+      <ion-checkbox [color]="character.color" slot="end" [checked]="character.selected" [(ngModel)]="character.selected"></ion-checkbox>
+    </ion-item> 
+  </ion-list>
+</ion-content>

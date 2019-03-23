@@ -32,6 +32,27 @@ export class HomePage implements OnInit {
       icon: 'radio-button-on',
       name: 'Cards',
       redirectTo: '/card'
+    },
+    {
+      icon: 'check',
+      name: 'Checkbox',
+      redirectTo: '/checkbox'
+    },
+    {
+      icon: 'calendar',
+      name: 'DateTime',
+      redirectTo: '/datetime'
+    }
+    ,
+    {
+      icon: 'car',
+      name: 'Fab',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'grid',
+      name: 'Grid',
+      redirectTo: '/grid'
     }
   ];
 
