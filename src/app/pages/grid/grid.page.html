@@ -1,6 +1,6 @@
 <app-header title="GRID"></app-header>
 
-<ion-content >
+<ion-content fullscreen>
   <ion-grid>
     <ion-row>
       <ion-col size="6">Hola</ion-col>
@@ -11,8 +11,18 @@
     <ion-row>
       <ion-col>1</ion-col>
       <ion-col>2</ion-col>
-      <ion-col>3</ion-col>
+      <ion-col>3 </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12" 
+        *ngFor="let item of [1,2,2,33,1,1,2,3,4]">
+        <ion-card>
+          <img src="/assets/shapes.svg">
+          <ion-card-header>CardHeader</ion-card-header>
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </ion-grid>
 

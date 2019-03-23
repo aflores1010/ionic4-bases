@@ -1,0 +1,45 @@
+<app-header title="Input"></app-header>
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header>Name: {{name || 'Theres no saved name'}} </ion-list-header>
+
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <form #exampleForm="ngForm" (ngSubmit)="onSubmit()">
+    <ion-list>
+
+        <ion-list-header>
+          <ion-label>Is form valid ? {{exampleForm.valid}} </ion-label>
+          </ion-list-header>
+
+      <ion-item>
+        <ion-label position="floating">User Email</ion-label>
+        <ion-input type="email"
+                   name="email"
+                   [(ngModel)]="user.email"
+                   pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                   required></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">User Password</ion-label>
+          <ion-input type="password"
+                     name="password"
+                     [(ngModel)]="user.password"
+                     required></ion-input>
+        </ion-item>
+
+        <ion-button type="submit" expand="full" [disabled]="exampleForm.invalid">
+          Click
+        </ion-button>
+
+    </ion-list>
+  </form>
+
+</ion-content>

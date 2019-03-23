@@ -53,6 +53,21 @@ export class HomePage implements OnInit {
       icon: 'grid',
       name: 'Grid',
       redirectTo: '/grid'
+    },
+    {
+      icon: 'scroll',
+      name: 'InfiniteScroll',
+      redirectTo: '/infinite-scroll'
+    },
+    {
+      icon: 'hammer',
+      name: 'Input',
+      redirectTo: '/input'
+    },
+    {
+      icon: 'list',
+      name: 'List',
+      redirectTo: '/list'
     }
   ];
 
