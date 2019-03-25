@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPage implements OnInit {
 
-  constructor() { }
+  public mockData = [];
+
+  public mockDataObservable: Observable<any>;
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.getUsers();
+  }
+
+  getUsers() {
+    // Suscribiendose desde el componente
+    // this.dataService.getUsers().subscribe(( res: any ) => {
+    //   this.mockData = res;
+    //   console.log(res);
+    // });
+
+    this.mockDataObservable = this.dataService.getUsers();
+
   }
 
 }

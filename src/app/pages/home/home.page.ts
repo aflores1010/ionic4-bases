@@ -68,6 +68,11 @@ export class HomePage implements OnInit {
       icon: 'list',
       name: 'List',
       redirectTo: '/list'
+    },
+    {
+      icon: 'nfc',
+      name: 'Nfc',
+      redirectTo: '/nfc'
     }
   ];
 
