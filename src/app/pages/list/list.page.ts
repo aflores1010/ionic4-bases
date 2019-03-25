@@ -29,4 +29,14 @@ export class ListPage implements OnInit {
 
   }
 
+  favorite(data) {
+    console.log(data);
+  }
+share(data) {
+  console.log(data);
+}
+unread(data) {
+  console.log(data);
+}
+
 }
