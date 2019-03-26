@@ -1,7 +1,7 @@
 <app-header title="List"></app-header>
 
 <ion-content padding="padding">
-  <ion-list>
+  <ion-list #list>
 
     <ion-item-sliding *ngFor="let data of mockDataObservable | async">
       <ion-item >

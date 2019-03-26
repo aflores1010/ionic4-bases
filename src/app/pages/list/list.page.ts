@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import { Observable } from 'rxjs';
+import { IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -8,6 +9,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./list.page.scss'],
 })
 export class ListPage implements OnInit {
+
+  @ViewChild('list') list: IonList;
 
   public mockData = [];
 
@@ -31,12 +34,17 @@ export class ListPage implements OnInit {
 
   favorite(data) {
     console.log(data);
+    this.list.closeSlidingItems();
   }
 share(data) {
   console.log(data);
+  this.list.closeSlidingItems();
+
 }
 unread(data) {
   console.log(data);
+  this.list.closeSlidingItems();
+
 }
 
 }
