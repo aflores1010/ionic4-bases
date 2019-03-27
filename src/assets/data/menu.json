@@ -71,6 +71,11 @@
       "redirectTo": "/loading"
     },
     {
+      "icon": "phone-portrait",
+      "name": "Modal",
+      "redirectTo": "/modal"
+    },
+    {
       "icon": "nfc",
       "name": "Nfc",
       "redirectTo": "/nfc"

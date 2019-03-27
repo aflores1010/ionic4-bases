@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{nombre}} --- {{pais}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="modal-content">
+
+  <ion-list>  
+    <ion-item>
+      <ion-label>
+          <p class="header-item">Hola</p>
+          <p>Hola 2</p>
+      </ion-label>
+      <ion-icon slot="end" name="add"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hawaii</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-button (click)="exitWithout()" expand="full">
+    Exit without
+  </ion-button>
+  <ion-button (click)="exitWith()" expand="full">
+      Exit with
+    </ion-button>
+</ion-content>

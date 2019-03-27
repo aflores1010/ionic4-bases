@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },
   { path: 'nfc', loadChildren: './pages/nfc/nfc.module#NfcPageModule' },
   { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
-  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' }
+  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
+  { path: 'modal-info', loadChildren: './pages/modal-info/modal-info.module#ModalInfoPageModule' }
 
 ];
 
