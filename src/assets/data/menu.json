@@ -76,6 +76,16 @@
       "redirectTo": "/modal"
     },
     {
+      "icon": "tablet-portrait",
+      "name": "PopOver",
+      "redirectTo": "/popover"
+    },
+    {
+      "icon": "code-working",
+      "name": "ProgressBar",
+      "redirectTo": "/progress-bar"
+    },
+    {
       "icon": "nfc",
       "name": "Nfc",
       "redirectTo": "/nfc"
