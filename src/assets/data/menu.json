@@ -86,6 +86,21 @@
       "redirectTo": "/progress-bar"
     },
     {
+      "icon": "arrow-round-down",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
+    },
+    {
+      "icon": "search",
+      "name": "Searchbar",
+      "redirectTo": "/searchbar"
+    },
+    {
+      "icon": "segment",
+      "name": "Segment",
+      "redirectTo": "/segment"
+    },
+    {
       "icon": "nfc",
       "name": "Nfc",
       "redirectTo": "/nfc"
