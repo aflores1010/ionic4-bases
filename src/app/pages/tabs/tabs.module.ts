@@ -11,6 +11,10 @@ import { ComponentsModule } from 'src/app/components/components.module';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'account'
+  },
+  {
+    path: '',
     component: TabsPage,
     children:[
       {
